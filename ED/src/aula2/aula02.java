@@ -5,6 +5,7 @@ public class aula02 {
     
     public static void main(String[] args) {
         // TODO code application logic here
+        //#################Exercício 01#################
         VetoresMatrizes vM1 = new VetoresMatrizes();
         int[] entrada = new int[]{0,1,2,3,4,5,6,7};
         int[] entrada2 = new int[]{0,2,4,6,8,0,2,4};
@@ -28,17 +29,18 @@ public class aula02 {
             }
         }
         
+        //#################Exercício 02#################
         int[][] matrizSaida;
         matrizSaida = vM1.conversorVetorMatriz(entrada, entrada2, entrada3);
         System.out.println("Matriz");
         for(int j=0; j<3;j++){
-        for(int i=0; i<8;i++){
-            if(i<7){
-                System.out.print(matrizSaida[i][j]);
-            } else{
-                System.out.println(matrizSaida[i][j]);
+            for(int i=0; i<8;i++){
+                if(i<7){
+                    System.out.print(matrizSaida[i][j]);
+                } else{
+                    System.out.println(matrizSaida[i][j]);
+                }
             }
-        }
         }
        
         
