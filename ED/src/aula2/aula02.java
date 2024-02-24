@@ -8,8 +8,6 @@ public class aula02 {
         //#################Exercício 01#################
         VetoresMatrizes vM1 = new VetoresMatrizes();
         int[] entrada = new int[]{0,1,2,3,4,5,6,7};
-        int[] entrada2 = new int[]{0,2,4,6,8,0,2,4};
-        int[] entrada3 = new int[]{1,3,5,7,9,1,3,5};
         int[] saida;
         saida = vM1.inverterVetor(entrada);
         System.out.print("Entrada: ");
@@ -31,6 +29,9 @@ public class aula02 {
         
         //#################Exercício 02#################
         int[][] matrizSaida;
+        int[] entrada1 = new int[]{0,1,2,3,4,5,6,7};
+        int[] entrada2 = new int[]{0,2,4,6,8,0,2,4};
+        int[] entrada3 = new int[]{1,3,5,7,9,1,3,5};
         matrizSaida = vM1.conversorVetorMatriz(entrada, entrada2, entrada3);
         System.out.println("Matriz");
         for(int j=0; j<3;j++){
@@ -43,6 +44,8 @@ public class aula02 {
             }
         }
        
+          //#################Exercício 03#################
+        int[] binario = new int[]{1,1,0,1,0,0,1,1};
         
     }
 }

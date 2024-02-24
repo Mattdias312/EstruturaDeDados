@@ -33,4 +33,10 @@ public class VetoresMatrizes {
         return matriz;
     }
     
+    public int conversorBinarioDecimal(int[] binario){
+        
+        int decimal=1;
+        return decimal;
+    }
+    
 }
