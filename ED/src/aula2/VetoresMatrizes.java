@@ -35,8 +35,23 @@ public class VetoresMatrizes {
     
     public int conversorBinarioDecimal(int[] binario){
         
-        int decimal=1;
+        int decimal = 0;
+        for(int i=0; i<8;i++){
+            decimal += binario[7-i]* Math.pow(2,i);
+        }
+        
         return decimal;
+    }
+    
+    public int[] conversorDecimalBinario(int decimal){
+        
+        int binario[] = new int[8];
+        for(int i=0; i<8;i++){
+            binario[7-i] = decimal%2;
+            decimal = decimal/2;
+        }
+        
+        return binario;
     }
     
 }

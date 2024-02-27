@@ -32,7 +32,7 @@ public class aula02 {
         int[] entrada1 = new int[]{0,1,2,3,4,5,6,7};
         int[] entrada2 = new int[]{0,2,4,6,8,0,2,4};
         int[] entrada3 = new int[]{1,3,5,7,9,1,3,5};
-        matrizSaida = vM1.conversorVetorMatriz(entrada, entrada2, entrada3);
+        matrizSaida = vM1.conversorVetorMatriz(entrada1, entrada2, entrada3);
         System.out.println("Matriz");
         for(int j=0; j<3;j++){
             for(int i=0; i<8;i++){
@@ -45,7 +45,21 @@ public class aula02 {
         }
        
           //#################Exercício 03#################
-        int[] binario = new int[]{1,1,0,1,0,0,1,1};
+        int[] binario = new int[]{1,1,0,1,0,0,1,0};
+        System.out.println(vM1.conversorBinarioDecimal(binario));
+        
+          //#################Exercício 03#################
+        int decimal = 3;
+        int[] binarioConvertido;
+        binarioConvertido = vM1.conversorDecimalBinario(decimal);
+        for(int i=0; i<8;i++){
+                if(i<7){
+                    System.out.print(binarioConvertido[i]);
+                }else{
+                    System.out.println(binarioConvertido[i]);
+                }
+        }
+        
         
     }
 }
