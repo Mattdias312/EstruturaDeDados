@@ -10,6 +10,7 @@ public class aula02 {
         int[] entrada = new int[]{0,1,2,3,4,5,6,7};
         int[] saida;
         saida = vM1.inverterVetor(entrada);
+        System.out.println("################# Exercício 01 #################");
         System.out.print("Entrada: ");
         for(int i=0; i<8;i++){
             if(i<7){
@@ -34,6 +35,7 @@ public class aula02 {
         int[] entrada3 = new int[]{1,3,5,7,9,1,3,5};
         matrizSaida = vM1.conversorVetorMatriz(entrada1, entrada2, entrada3);
         System.out.println("Matriz");
+        System.out.println("################# Exercício 02 #################");
         for(int j=0; j<3;j++){
             for(int i=0; i<8;i++){
                 if(i<7){
@@ -46,12 +48,14 @@ public class aula02 {
        
           //#################Exercício 03#################
         int[] binario = new int[]{1,1,0,1,0,0,1,0};
+        System.out.println("################# Exercício 03 #################");
         System.out.println(vM1.conversorBinarioDecimal(binario));
         
           //#################Exercício 03#################
         int decimal = 3;
         int[] binarioConvertido;
         binarioConvertido = vM1.conversorDecimalBinario(decimal);
+        System.out.println("################# Exercício 04 #################");
         for(int i=0; i<8;i++){
                 if(i<7){
                     System.out.print(binarioConvertido[i]);
