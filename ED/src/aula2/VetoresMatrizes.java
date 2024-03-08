@@ -37,7 +37,7 @@ public class VetoresMatrizes {
         
         int decimal = 0;
         for(int i=0; i<8;i++){
-            decimal += binario[7-i]* Math.pow(2,i);
+            decimal += binario[7-i] * Math.pow(2,i);
         }
         
         return decimal;
@@ -45,7 +45,7 @@ public class VetoresMatrizes {
     
     public int[] conversorDecimalBinario(int decimal){
         
-        int binario[] = new int[8];
+        int[] binario = new int[8];
         for(int i=0; i<8;i++){
             binario[7-i] = decimal%2;
             decimal = decimal/2;
@@ -53,5 +53,29 @@ public class VetoresMatrizes {
         
         return binario;
     }
+    
+    public int[] criaVetorExtra(int[] vetor1, int[] vetor2){
+        int[] vetor3 = new int[10];
+        int j = 0;
+        
+        for(int i=0; i<5;i++){
+            vetor3[j] = vetor1[i];
+            vetor3[j+1] = vetor2[i];
+            j+=2;
+        }
+        return vetor3;
+    }
+    
+    public int[][] matrizTransposta(int[][] matriz){
+        int[][] matrizTransposta = new int[3][2];
+        
+        for(int j=0;j<2;j++){
+            for(int i=0;i<3;i++){
+                matrizTransposta[i][j] = matriz[j][i];
+            }
+        }
+        
+        return matrizTransposta;
+    } 
     
 }
