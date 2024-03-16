@@ -44,4 +44,25 @@ public class PilhaVetor {
         }
         return true;
     }
+    
+    public boolean validaBalanceamento(String[] balanco){
+        while(this.desempilha()!=null){
+            this.desempilha();
+        }
+        
+        for(int i=0;i<balanco.length;i++){
+            this.empilhar(balanco[i]);
+            if(i>0){
+                if(pilhaVetor[i-1]!="(" && pilhaVetor[i]==")" ){
+                    return false;
+                }else{
+                    this.desempilha();
+                    this.desempilha();
+                }
+            }
+            
+        }
+        
+        return true;
+    }
 }

@@ -18,8 +18,11 @@ public class Aula05ED {
         */
         
         String palavra="araras";
-        PilhaVetor palindromo = new PilhaVetor(palavra.length());
-        System.out.println(palindromo.verificaPalindromo(palavra));
+        PilhaVetor pv = new PilhaVetor(palavra.length());
+        System.out.println(pv.verificaPalindromo(palavra));
+        
+        String[] balanco = new String[]{"(",")",")"};
+        System.out.println(pv.validaBalanceamento(balanco));
     }
     
 }
